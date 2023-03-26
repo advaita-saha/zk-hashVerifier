@@ -4,11 +4,11 @@ include "../node_modules/circomlib/circuits/poseidon.circom";
 
 template PoseidonHasher() {
     signal input in;
-    signal output out;
+    signal input hash;
 
     component hasher = Poseidon(1);
     hasher.inputs[0] <== in;
-    out <== hasher.out;
+    hash === hasher.out;
 }
 
-component main = PoseidonHasher();
+component main { public [hash] } = PoseidonHasher();
