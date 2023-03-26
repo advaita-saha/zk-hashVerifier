@@ -2,6 +2,8 @@
 
 This project is a simple implementation of a zero-knowledge proof to verify ownership of a hash for a particular data. The proof is based on the Poseidon hash function.
 
+We can prove that we know the original data for the given hash without revealing it.
+
 The proof is a proof of knowledge of a hash for a particular data. The prover proves that he knows a hash for a particular data without revealing the data itself. The verifier verifies that the prover knows a hash for a particular data.
 The proof is based on the Poseidon hash function
 
