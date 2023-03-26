@@ -11,9 +11,9 @@ async function generateProof(value){
         "./circuits/build/circuit_js/circuit.wasm",
         "./circuits/build/keys/circuit_0000.zkey"
     );
-    
+    console.log("-------------- Public Signals (pp) ------------------");
     console.log(publicSignals);
-    console.log("--------------------------------");
+    console.log("---------------- Proof (pi) ----------------");
     console.log(proof);
 
     return { proof, publicSignals };
